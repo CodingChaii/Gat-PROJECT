@@ -6,11 +6,15 @@ export default function Component() {
 
   if (session) {
     return (
+      
+    <>
+    <Nav/>
       <div className="center-container">
-        <Nav/>
-        <span>Signed in as {session.user?.email}</span> <br />
+        
+        <span className="text-white">Signed in as {session.user?.name}</span> <br />
         <button onClick={() => signOut()}>Sign out</button>
       </div>
+    </>
     )
   }
 
