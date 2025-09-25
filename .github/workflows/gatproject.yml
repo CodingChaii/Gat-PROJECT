@@ -31,5 +31,5 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          GATT_APPLICATION_KEY: ${{ secrets.GATT_APPLICATION_KEY }}
-          GATT_APPLICATION_ID: ${{ secrets.GATT_APPLICATION_ID }}
+          GaT_KEY: ${{ secrets.GATT_APPLICATION_KEY }}
+          GaT_ID: ${{ secrets.GATT_APPLICATION_ID }}
